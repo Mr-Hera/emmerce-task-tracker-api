@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'rest_framework',
+
     'base',
 ]
 
@@ -77,8 +79,12 @@ WSGI_APPLICATION = 'task_tracker_api.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': '511ZT9n7zZaf55PYcQ0y',
+        'HOST': 'containers-us-west-192.railway.app',
+        'PORT': '7503',
     }
 }
 
