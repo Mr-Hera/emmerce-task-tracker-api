@@ -58,7 +58,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'task_tracker_api.urls'
 CORS_URLS_REGEX = r"^/base/.*"
-CORS_ALLOWED_ORIGINS = [*]
+CORS_ALLOWED_ORIGINS = ['*']
 
 TEMPLATES = [
     {
