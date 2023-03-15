@@ -58,10 +58,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'task_tracker_api.urls'
 CORS_URLS_REGEX = r"^/base/.*"
-CORS_ALLOWED_ORIGINS = [
-    'https://emmerce-task-tracker.netlify.app/',
-    'http://localhost:5173/',
-]
+CORS_ALLOWED_ORIGINS = [*]
 
 TEMPLATES = [
     {
